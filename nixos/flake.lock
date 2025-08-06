@@ -197,17 +197,17 @@
         "rust-overlay": "rust-overlay"
       },
       "locked": {
-        "lastModified": 1753780010,
-        "narHash": "sha256-tCXUle0hznQMvcZ1FYKs5ECus1LErQ2ukkxNvbdalS8=",
-        "ref": "refs/heads/main",
-        "rev": "a2de36ddfb307f77de0d666944f520e5ea51e418",
-        "revCount": 827,
-        "type": "git",
-        "url": "https://seed.radicle.xyz/z39mP9rQAaGmERfUMPULfPUi473tY.git"
+        "lastModified": 1740761634,
+        "narHash": "sha256-kxk5hRI/bQg2KbDde2KHQRw+YdbbFMTdd8beDc2OyUE=",
+        "owner": "radicle-dev",
+        "repo": "radicle-tui",
+        "rev": "dcc51b96a90d6e63cd69fae7f29e896f13816a1f",
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "https://seed.radicle.xyz/z39mP9rQAaGmERfUMPULfPUi473tY.git"
+        "owner": "radicle-dev",
+        "repo": "radicle-tui",
+        "type": "github"
       }
     },
     "root": {
