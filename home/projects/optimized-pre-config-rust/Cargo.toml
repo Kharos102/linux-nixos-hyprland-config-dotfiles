@@ -2,11 +2,10 @@
 
 ## Dev build compilation speed optimization (more https://benw.is/posts/how-i-improved-my-rust-compile-times-by-seventy-five-percent)
 # Work only with the nightly version of Rust by the time it was written; it is recommended NOT to use it in production for now
-cargo-features = [ "codegen-backend", "profile-rustflags" ]
+cargo-features = [ "profile-rustflags" ]
 # Important: It provides less useful error messages during compilation
 [profile.dev]
 opt-level = 1
-codegen-backend = "cranelift"
 rustflags = [
     "-Z", "threads=8", # Enable parallel frontend compiling
     "-C", "linker=clang", # Use clang as the linker
@@ -15,7 +14,6 @@ rustflags = [
 ]
 [profile.dev.package."*"]
 opt-level = 3
-codegen-backend = "cranelift"
 
 [profile.dev.build-override]
 rustflags = [ "-Z", "threads=8", "-C", "link-arg=-fuse-ld=/run/current-system/sw/bin/mold" ] # `/run/current-system/sw/bin/mold` is an absolute path to the mold executable
@@ -24,7 +22,7 @@ rustflags = [ "-Z", "threads=8", "-C", "link-arg=-fuse-ld=/run/current-system/sw
 # You can also use programs such as `upx` for size optimization
 [profile.release]
 strip = true
-opt-level = "z" # You can try 's' instead of 'z' if you want to optimize for speed
+opt-level = "s" # You can try 's' instead of 'z' if you want to optimize for speed
 lto = true
 codegen-units = 1
 panic = "abort" # DELETE extra unwinding code that provides helpful backtrace information for runtime errors

@@ -1,6 +1,5 @@
 [user]
-	email = artem.shv@proton.me
-	name = xnm
+	name = kharos
 	signingkey = ~/.radicle/keys/radicle.pub
 
 [core]

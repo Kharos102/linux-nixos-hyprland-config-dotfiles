@@ -10,7 +10,7 @@
 
   outputs = { nixpkgs, ... } @ inputs:
   {
-    nixosConfigurations.isitreal-laptop = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.purgatory = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [
         ./configuration.nix

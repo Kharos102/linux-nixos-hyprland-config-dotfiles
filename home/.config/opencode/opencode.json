@@ -94,7 +94,7 @@
         "npx",
         "-y",
         "@modelcontextprotocol/server-filesystem",
-        "/home/xnm"
+        "/home/kharos"
       ],
       "enabled": true
     }
