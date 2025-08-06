@@ -19,7 +19,7 @@
         # ./disable-nvidia.nix
         ./opengl.nix
         # ./fingerprint-scanner.nix
-        # ./clamav-scanner.nix
+        ./clamav-scanner.nix
         ./yubikey.nix
         ./sound.nix
         ./usb.nix
@@ -30,7 +30,7 @@
         ./nix-settings.nix
         ./nixpkgs.nix
         ./gc.nix
-        # ./auto-upgrade.nix
+        ./auto-upgrade.nix
         ./linux-kernel.nix
         ./screen.nix
         # ./location.nix
@@ -46,7 +46,7 @@
         ./environment-variables.nix
         ./bluetooth.nix
         ./networking.nix
-        # ./mac-randomize.nix
+         ./mac-randomize.nix
         # ./open-ssh.nix
         ./mosh.nix
         ./firewall.nix

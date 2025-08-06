@@ -10,6 +10,10 @@
   # Enable Containerd
   # virtualisation.containerd.enable = true;
 
+  # Enable libvirtd
+  virtualisation.libvirtd.enable = true;
+  boot.kernelModules = ["kvm-amd" "kvm-intel"];
+
   # Enable Docker
   # virtualisation.docker = {
   #   enable = true;
@@ -54,5 +58,7 @@
     docker-compose
     # lazydocker
     # docker-credential-helpers
+
+    virt-manager
   ];
 }
