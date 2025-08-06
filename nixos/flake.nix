@@ -46,7 +46,7 @@
         ./environment-variables.nix
         ./bluetooth.nix
         ./networking.nix
-         ./mac-randomize.nix
+        # ./mac-randomize.nix
         # ./open-ssh.nix
         ./mosh.nix
         ./firewall.nix
