@@ -15,7 +15,8 @@
       modules = [
         ./configuration.nix
         ./hardware-configuration.nix
-        ./nvidia.nix
+        # FIXME: enable nvidia.nix if using nvidia gpu
+	# ./nvidia.nix
         # ./disable-nvidia.nix
         ./opengl.nix
         # ./fingerprint-scanner.nix
