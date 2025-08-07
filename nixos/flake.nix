@@ -64,6 +64,7 @@
         ./terminal-utils.nix
         ./llm.nix
         ./work.nix
+	./text-editors.nix
       ];
     };
   };
